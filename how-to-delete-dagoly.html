@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Radera konto – Sagoly</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&display=swap');
+
+  :root {
+    --primary: #7B4FE0;
+    --primary-dark: #3D1A6E;
+    --primary-light: #9B7FEE;
+    --background: #F5EDD6;
+    --accent: #FFD700;
+    --card: #FFFFFF;
+    --text: #2E2240;
+    --text-soft: #6B5E85;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Baloo 2', sans-serif;
+    background: linear-gradient(180deg, #F5EDD6 0%, #EFE3C4 100%);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 32px 16px 64px;
+  }
+
+  .container {
+    max-width: 640px;
+    width: 100%;
+  }
+
+  .logo-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+
+  .logo {
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--primary-dark);
+    letter-spacing: 0.5px;
+  }
+
+  .star {
+    font-size: 28px;
+    transform: translateY(-10px);
+  }
+
+  .subtitle {
+    text-align: center;
+    color: var(--text-soft);
+    font-weight: 500;
+    margin-bottom: 36px;
+    font-size: 16px;
+  }
+
+  .card {
+    background: var(--card);
+    border-radius: 28px;
+    padding: 32px 28px;
+    box-shadow: 0 12px 30px rgba(123, 79, 224, 0.12);
+    margin-bottom: 24px;
+  }
+
+  h1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--primary-dark);
+    margin: 0 0 16px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--primary-dark);
+    margin: 28px 0 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  p, li {
+    font-size: 15.5px;
+    line-height: 1.65;
+    color: var(--text);
+  }
+
+  .steps {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .step {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    background: #FAF6E9;
+    border-radius: 16px;
+    padding: 14px 16px;
+  }
+
+  .step-number {
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .step-text {
+    font-size: 15px;
+    line-height: 1.5;
+    padding-top: 3px;
+  }
+
+  .step-text b {
+    color: var(--primary-dark);
+  }
+
+  .data-list {
+    margin: 8px 0 0;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .data-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .data-list li::before {
+    content: "✓";
+    color: var(--primary);
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .info-box {
+    background: linear-gradient(135deg, #FFF7D6, #FFF1B8);
+    border: 1px solid #F0DD80;
+    border-radius: 16px;
+    padding: 16px 18px;
+    font-size: 14.5px;
+    color: #6B5300;
+    margin-top: 24px;
+  }
+
+  .contact-box {
+    background: #F1E9FF;
+    border-radius: 16px;
+    padding: 18px 20px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .contact-box a {
+    color: var(--primary);
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .contact-box a:hover {
+    text-decoration: underline;
+  }
+
+  footer {
+    text-align: center;
+    color: var(--text-soft);
+    font-size: 13px;
+    margin-top: 32px;
+  }
+
+  .emoji-icon {
+    font-size: 18px;
+  }
+
+  @media (max-width: 480px) {
+    .card { padding: 24px 18px; }
+    h1 { font-size: 22px; }
+    .logo { font-size: 32px; }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="logo-row">
+      <span class="logo">Sagoly</span>
+      <span class="star">✨</span>
+    </div>
+    <p class="subtitle">Där din fantasi blir till magiska sagor 💜</p>
+
+    <div class="card">
+      <h1>Radera ditt konto</h1>
+      <p style="text-align:center; color: var(--text-soft);">
+        Vi vill att du alltid ska ha full kontroll över ditt konto och din data.
+        Du kan radera ditt Sagoly-konto direkt i appen, när du vill.
+      </p>
+
+      <h2><span class="emoji-icon">📱</span> Så raderar du ditt konto i appen</h2>
+      <ul class="steps">
+        <li class="step">
+          <div class="step-number">1</div>
+          <div class="step-text">Öppna <b>Sagoly</b>-appen och logga in på ditt konto.</div>
+        </li>
+        <li class="step">
+          <div class="step-number">2</div>
+          <div class="step-text">Tryck på <b>kugghjulsikonen ⚙️</b> bredvid "Profiler" på hemskärmen för att öppna <b>Inställningar</b>.</div>
+        </li>
+        <li class="step">
+          <div class="step-number">3</div>
+          <div class="step-text">Scrolla ner till <b>"Radera konto"</b> och tryck på knappen.</div>
+        </li>
+        <li class="step">
+          <div class="step-number">4</div>
+          <div class="step-text">Bekräfta att du vill radera kontot. Detta sker omedelbart och permanent.</div>
+        </li>
+      </ul>
+
+      <h2><span class="emoji-icon">🗑️</span> Vad raderas?</h2>
+      <p>När du raderar ditt konto tas följande bort permanent:</p>
+      <ul class="data-list">
+        <li>Ditt konto och inloggningsuppgifter</li>
+        <li>Alla barnprofiler och profilbilder</li>
+        <li>Alla skapade sagor, illustrationer och uppläsningar</li>
+        <li>Köphistorik och Sagoly-credits</li>
+        <li>Premium-status och inställningar</li>
+      </ul>
+
+      <div class="info-box">
+        ⏱️ Raderingen sker omedelbart i appen. All tillhörande data tas bort permanent inom 30 dagar från våra system och säkerhetskopior.
+      </div>
+
+      <div class="contact-box">
+        <p style="margin: 0 0 6px;">Behöver du hjälp med raderingen?</p>
+        <a href="mailto:support@sagoly.app">support@sagoly.app</a>
+      </div>
+    </div>
+
+    <footer>
+      © 2026 Sagoly — Aion Apps
+    </footer>
+  </div>
+</body>
+</html>
